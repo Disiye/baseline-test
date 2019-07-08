@@ -3,10 +3,9 @@
 function collectSameElements(collectionA, objectB) {
  var tempArray1 = [];
  var tempArray2 = [];
- var collectionB = objectB.value();
 
- for(var i=0;i<collectionB.length;i++){
-     tempArray1[collectionB[i]]=true;
+ for(var i=0;i<objectB.value.length;i++){
+     tempArray1[objectB.value[i]]=true;
  }
  for(var i=0;i<collectionA.length;i++){
      if(tempArray1[collectionA[i]]){
